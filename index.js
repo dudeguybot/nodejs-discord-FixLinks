@@ -14,19 +14,19 @@ client.on('message', msg => {
     }
     else if (msg.content.includes("twitter.com") ) {
       fixedstring = msg.content.replace("twitter.com","fxtwitter.com")
-      msg.reply(fixedstring);
+      msg.channel.send(fixedstring);
     }
     else if (msg.content.includes("x.com") ) {
       fixedstring = msg.content.replace("x.com","fxtwitter.com")
-      msg.reply(fixedstring);
+      msg.channel.send(fixedstring);
     }
     else if (msg.content.includes("tiktok.com") ) {
       fixedstring = msg.content.replace("tiktok.com","vxtiktok.com")
-      msg.reply(fixedstring);
+      msg.channel.send(fixedstring);
     }
     else if (msg.content.includes("reddit.com") ) {
       fixedstring = msg.content.replace("reddit.com","vxreddit.com")
-      msg.reply(fixedstring);
+      msg.channel.send(fixedstring);
     }       
     else {
         //msg.reply(msg.content);
