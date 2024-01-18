@@ -13,23 +13,23 @@ client.on('message', msg => {
       return;
     }
     else if (msg.content.includes("twitter.com") ) {
-      fixedstring = msg.content.replace("twitter.com","vxtwitter.com")
+      fixedstring = msg.content.replace("twitter.com","vxtwitter.com");
       msg.channel.send(fixedstring);
     }
     else if (msg.content.includes("x.com") ) {
-      fixedstring = msg.content.replace("x.com","vxtwitter.com")
+      fixedstring = msg.content.replace("x.com","vxtwitter.com");
       msg.channel.send(fixedstring);
     }
     else if (msg.content.includes("tiktok.com") ) {
-      fixedstring = msg.content.replace("tiktok.com","vxtiktok.com")
+      fixedstring = msg.content.replace("tiktok.com","vxtiktok.com");
       msg.channel.send(fixedstring);
     }
     else if (msg.content.includes("reddit.com") ) {
-      fixedstring = msg.content.replace("reddit.com","vxreddit.com")
+      fixedstring = msg.content.replace("reddit.com","vxreddit.com");
       msg.channel.send(fixedstring);
     }     
     else if (msg.content.includes("instagram.com") ) {
-      fixedstring = msg.content.replace("instagram.com","ddinstagram.com")
+      fixedstring = msg.content.replace("instagram.com","ddinstagram.com");
       msg.channel.send(fixedstring);
     }     
     else {
