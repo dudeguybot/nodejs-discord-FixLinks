@@ -13,11 +13,11 @@ client.on('message', msg => {
       return;
     }
     else if (msg.content.includes("twitter.com") ) {
-      fixedstring = msg.content.replace("twitter.com","vxtwitter.com");
+      fixedstring = msg.content.replace("twitter.com","fxtwitter.com");
       msg.channel.send(fixedstring);
     }
     else if (msg.content.includes("x.com") ) {
-      fixedstring = msg.content.replace("x.com","vxtwitter.com");
+      fixedstring = msg.content.replace("x.com","fxtwitter.com");
       msg.channel.send(fixedstring);
     }
     else if (msg.content.includes("tiktok.com") ) {
