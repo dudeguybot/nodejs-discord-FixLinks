@@ -14,7 +14,7 @@ client.on('message', msg => {
     }
     else if (CheckIfAlreadyFixed(msg.content))
     {
-        msg.channel.reply("Stop doing my job and let me fix it for you. I have one job... ONE JOB");
+        msg.channel.reply("Stop doing my job and let me fix it for you. I have one job... ONE JOB!");
     }
     else if (msg.content.includes("twitter.com") ) {
       fixedstring = msg.content.replace("twitter.com","fxtwitter.com");
