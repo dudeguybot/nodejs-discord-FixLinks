@@ -41,7 +41,7 @@ client.on('message', msg => {
     }
 });
 
-function CheckIfAlreadyFixed(String message)
+function CheckIfAlreadyFixed(message)
 {
   if(message.includes("fxtwitter.com") ||
      message.includes("vxtwitter.com") ||
