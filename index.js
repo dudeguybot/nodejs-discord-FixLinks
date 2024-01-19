@@ -10,13 +10,13 @@ client.on('ready', () => {
 client.on('message', msg => {
     // check if message isn't from us
   let check = CheckIfAlreadyFixed(msg.content);
-  print(check);
+  console.log(check);
     if (msg.author == client.user) {
       return;
     }
     else if (check === 1)
     {
-        print("Check'd");
+        console.log("Check'd");
         msg.channel.reply("Stop doing my job and let me fix it for you. I have one job... ONE JOB!");
     }
     else if (msg.content.includes("twitter.com") ) {
