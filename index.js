@@ -12,6 +12,10 @@ client.on('message', msg => {
     if (msg.author == client.user) {
       return;
     }
+    else if (CheckIfAlreadyFixed(msg.content))
+    {
+        msg.channel.reply("Stop doing my job and let me fix it for you. I have one job... ONE JOB");
+    }
     else if (msg.content.includes("twitter.com") ) {
       fixedstring = msg.content.replace("twitter.com","fxtwitter.com");
       msg.channel.send(fixedstring);
@@ -37,4 +41,20 @@ client.on('message', msg => {
     }
 });
 
+public static boolean CheckIfAlreadyFixed(String message)
+{
+  if(message.includes("fxtwitter.com") ||
+     message.includes("vxtwitter.com") ||
+     message.includes("vxtiktok.com") ||
+     message.includes("vxreddit.com") ||
+     message.includes("ddinstagram.com"))
+  {
+    return true;
+  }
+  else 
+  {
+    return false;
+  }
+  
+}
 client.login(process.env.TOKEN); //login bot using token
