@@ -12,7 +12,7 @@ client.on('message', msg => {
     if (msg.author == client.user) {
       return;
     }
-    else if (CheckIfAlreadyFixed(msg.content))
+    else if (CheckIfAlreadyFixed(msg.content) === 1)
     {
         msg.channel.reply("Stop doing my job and let me fix it for you. I have one job... ONE JOB!");
     }
@@ -49,11 +49,11 @@ function CheckIfAlreadyFixed(String message)
      message.includes("vxreddit.com") ||
      message.includes("ddinstagram.com"))
   {
-    return 1===1;
+    return 1;
   }
   else 
   {
-    return 1===0;
+    return 0;
   }
   
 }
