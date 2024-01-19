@@ -49,11 +49,11 @@ function CheckIfAlreadyFixed(String message)
      message.includes("vxreddit.com") ||
      message.includes("ddinstagram.com"))
   {
-    return true;
+    return 1===1;
   }
   else 
   {
-    return false;
+    return 1===0;
   }
   
 }
