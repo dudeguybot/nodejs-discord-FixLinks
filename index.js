@@ -36,7 +36,7 @@ client.on('message', msg => {
       msg.channel.send(fixedstring);
     }     
     else if (msg.content.includes("instagram.com") ) {
-      fixedstring = msg.content.replace("instagram.com","ddinstagram.com");
+      fixedstring = msg.content.replace("instagram.com","kkinstagram.com");
       msg.channel.send(fixedstring);
     }     
     else {
